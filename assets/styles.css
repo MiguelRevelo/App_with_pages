@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: burlywood;
+    border: 1px solid #000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 12%;
+    height: 100%;
+    gap: 10px;
+    border: #000 1px solid;
+    
+}
+
+.header-title {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 10vh;
+    margin: 0;
+
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 50px;
+    gap: 10px;
+
+}
+
+.home-link, .live-link, .test-link, .ai-assistance-link {
+    background-color: #2995bc;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.home-link.active-link,
+.live-link.active-link,
+.test-link.active-link,
+.ai-assistance-link.active-link {
+    background-color: #070707; /* Change to the color you want */
+}
+
+
+.content {
+    display: flex;
+    height: 100%;
+    width: calc(100% - 12%);
+    background-color: rgb(91, 148, 191);
+    align-items: center;
+    justify-content: center;
+}

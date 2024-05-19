@@ -1,0 +1,124 @@
+.live-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+}
+
+.live-header-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.live-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 12vw);
+    height: 50vh;
+    border: 1px solid #000;
+}
+
+
+.pulse-oximeter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30vw;
+    background-color: rgb(47, 74, 183);
+}
+
+.pulse-container, .oximeter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(34, 213, 34);
+    border: #000 1px solid;
+}
+
+.pulse-title, .oximeter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(34, 213, 34);
+    border: #000 1px solid;
+}
+
+.pulse-value, .oximeter-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    font-size: 45px;
+    background-color: rgb(34, 213, 34);
+    border: #000 1px solid;
+}
+
+.live-graph-container {
+    display: flex;
+    height: 50vh;
+    background-color: grey;
+    width: 70vw;
+}
+
+.live-graph {
+    width: 100%;
+}
+
+.live-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    border: #000 1px solid;
+}
+
+.calories-container, .steps-container, .distance-container, .active-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(47, 74, 183);
+    border: #000 1px solid;
+}
+
+.calories-title, .steps-title, .distance-title, .active-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(72, 76, 94);
+    border: #000 1px solid;
+}
+
+.calories-value, .steps-value, .distance-value, .active-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(72, 76, 94);
+    border: #000 1px solid;
+}
