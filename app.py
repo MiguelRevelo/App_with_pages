@@ -24,6 +24,12 @@ app.layout = html.Div(
                             id="live-link",
                         ),
                         dcc.Link(
+                            "Statistics",
+                            href="/statistics",
+                            className="statistics-link",
+                            id="statistics-link",
+                        ),
+                        dcc.Link(
                             "Test", href="/test", className="test-link", id="test-link"
                         ),
                         dcc.Link(
@@ -49,6 +55,7 @@ app.layout = html.Div(
         Output("home-link", "className"),
         Output("live-link", "className"),
         Output("test-link", "className"),
+        Output("statistics-link", "className"),
         Output("ai-assistance-link", "className"),
     ],
     [Input("url", "pathname")],
@@ -59,6 +66,11 @@ def update_active_link(pathname):
         "home-link active-link" if pathname == "/" else "home-link",
         "live-link active-link" if pathname == "/live-data" else "live-link",
         "test-link active-link" if pathname == "/test" else "test-link",
+        (
+            "statistics-link active-link"
+            if pathname == "/statistics"
+            else "statistics-link"
+        ),
         (
             "ai-assistance-link active-link"
             if pathname == "/ai-assistance"

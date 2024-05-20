@@ -1,0 +1,33 @@
+.home-container {
+    display: flex;
+    justify-content: flex-end; /* aligns items on the horizontal line to the end */
+    align-items: flex-end; /* aligns items on the vertical line to the end */
+    height: 100vh;
+    width: calc(100vw - 12vw);
+    background-color: red;
+    background-image: url('/assets/Home_pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6em;
+    padding-right: 8em;
+
+}
+.home-title {
+    color: #95e0f0;
+    font-size: 3em;
+    margin: 0;
+
+}
+
+.home-subtitle {
+    color: #95e0f0;
+    font-size: 1.5em;
+
+}
