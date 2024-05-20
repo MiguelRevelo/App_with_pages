@@ -1,0 +1,32 @@
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: calc(100vw - 12vw);
+    border: 1px solid black;
+}
+
+.statistics-title {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.statistics-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.calories-steps, .sleep-air-quality {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 20px;
+    margin: 20px;
+}
+

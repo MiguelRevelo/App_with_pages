@@ -55,7 +55,7 @@ body {
 
 }
 
-.home-link, .live-link, .test-link, .statistics-link, .ai-assistance-link {
+.home-link, .about-link, .recommendations-link, .live-link, .statistics-link, .exercises-link,.test-link, .ai-assistance-link {
     background-color: #2995bc;
     color: white;
     padding: 14px 25px;
@@ -65,9 +65,12 @@ body {
 }
 
 .home-link.active-link,
+.about-link.active-link,
+.recommendations-link.active-link,
 .live-link.active-link,
-.test-link.active-link,
 .statistics.active-link,
+.excercises.active-link,
+.test-link.active-link,
 .ai-assistance-link.active-link {
     background-color: #070707; /* Change to the color you want */
 }
