@@ -6,13 +6,35 @@
     height: 100vh;
     background-color: red;
 }
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(26, 56, 172);
+}
 
 .live-header-title {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 100%;
+    
     padding-left: 20px;
+    border: #000 1px solid;
+
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+    height: 100%;
+
 }
 
 .live-middle {
@@ -25,6 +47,15 @@
     border: 1px solid #000;
 }
 
+.start-button, .stop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(162, 171, 203);
+
+}
 
 .pulse-oximeter {
     display: flex;

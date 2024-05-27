@@ -1,13 +1,27 @@
 import dash
 from dash import Input, Output, callback, dcc, html
 
-from functions.callbacks import register_callbacks
+from functions.live_data_callbacks import Live_plot
 
 dash.register_page(__name__)
 
 layout = html.Div(
     [
-        html.H1("Live Data", className="live-header-title"),
+        html.Div(
+            [
+                html.H1("Live Data", className="live-header-title"),
+                html.Div(
+                    [
+                        html.Button(
+                            "Start", id="start-button", className="start-button"
+                        ),
+                        html.Button("Stop", id="stop-button", className="stop-button"),
+                    ],
+                    className="buttons-container",
+                ),
+            ],
+            className="header-buttons",
+        ),
         html.Div(
             [
                 html.Div(

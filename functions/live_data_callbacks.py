@@ -1,12 +1,8 @@
 import plotly
 from dash import Input, Output, html
 
-from functions.acceso import accesos
 
-ref = accesos()
-
-
-def register_callbacks(app):
+def Live_plot(app, ref):
 
     @app.callback(
         Output("pulseid", "children"),

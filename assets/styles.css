@@ -68,8 +68,8 @@ body {
 .about-link.active-link,
 .recommendations-link.active-link,
 .live-link.active-link,
-.statistics.active-link,
-.excercises.active-link,
+.statistics-link.active-link,
+.exercises-link.active-link,
 .test-link.active-link,
 .ai-assistance-link.active-link {
     background-color: #070707; /* Change to the color you want */
